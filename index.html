@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile First</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body
+    class="[--tw-gradient-from:var(--color-sky-400)] [--tw-gradient-to:var(--color-indigo-900)] bg-[radial-gradient(ellipse_at_right,var(--tw-gradient-from),var(--tw-gradient-to))] text-white"
+  >
+    <div
+      class="min-h-screen py-3 px-6 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7">
+      <header class="flex justify-between">
+        <a href="" class="flex items-center">
+          <h1 class="text-4xl font-bold">WFA.</h1>
+        </a>
+
+        <!-- Mobile Menu -->
+        <div class="dropdown-menu lg:hidden absolute -top-full left-0 bg-white text-purple-900 w-full flex flex-col items-center gap-6 z-50 text-lg font-bold py-2">
+          <ul class="flex flex-col items-center gap-6">
+            <li class="hover:text-pink-600"><a href="">Locations</a></li>
+            <li class="hover:text-pink-600"><a href="">Offerings</a></li>
+            <li class="hover:text-pink-600"><a href="">Pricing</a></li>
+            <li class="hover:text-pink-600"><a href="">About Us</a></li>
+          </ul>
+
+          <div class="flex flex-col items-center gap-6">
+            <button class="hover:text-pink-600">Login</button>
+            <button class="bg-purple-900 text-white rounded-lg px-2 py-1 hover:text-pink-600">Register</button>
+          </div>
+        </div>
+
+        <ul
+          class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium">
+          <li><a href="">Locations</a></li>
+          <li><a href="">Offerings</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+
+        <div
+          class="hidden lg:flex lg:items-center lg:gap-10 lg:text-lg lg:font-medium"
+        >
+          <a href="">Login</a>
+          <button class="bg-purple-900 px-2 py-1 font-medium rounded:md">
+            Register
+          </button>
+        </div>
+
+        <div class="lg:hidden toggle-button">
+          <i class="fa-solid fa-bars fa-2x cursor-pointer"></i>
+        </div>
+      </header>
+
+      <main class="lg:flex">
+        <div
+          class="flex items-center justify-center lg:flex-1 lg:order-2 image-transform"
+        >
+          <img
+            src="assets/wfa.jpg"
+            alt="work from anywhere"
+            class="outline outline-white shadow-2xl shadow-black lg:h-150 lg:w-150 lg:rounded-full lg:justify-end"
+          />
+          <!-- 150 = 600px (37.5rem) -->
+        </div>
+
+        <div class="space-y-6 mt-16 flex-1 lg:order-1 lg:mt-32 text-transform">
+          <div class="text-7xl font-bold leading-tight">
+            <h1>Let's Switch</h1>
+            <h1>To Remote</h1>
+          </div>
+          <p>
+            WFA provides top-notch office spaces in prime locations worldwide
+            allowing people to work from anwhere. We provide coworking spaces
+            where people from various backgrounds like remote workers,
+            entrepreneurs, freelancers, and startup enthusiasts can work,
+            connect, and grow their businesses.
+          </p>
+          <form action="" class="flex flex-col gap-2 md:flex-row md:gap-0">
+            <input
+              type="text"
+              placeholder="Enter City"
+              class="max-md:rounded-md md:rounded-l-md rounded-l-md md:w-80 bg-white text-black px-4 py-3"
+            />
+            <button
+              class="max-md:rounded-md md:rounded-r-md rounded-r-md bg-purple-900 px-4 py-3 font-medium whitespace-nowrap"
+            >
+              Find Your Office
+            </button>
+          </form>
+          <div class="flex flex-col gap py-8">
+            <p class="font-semibold">Used by these Companies:</p>
+            <ul class="flex gap-6">
+              <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+              <li><i class="fa-brands fa-airbnb fa-2x"></i></li>
+              <li><i class="fa-brands fa-amazon fa-2x"></i></li>
+              <li><i class="fa-brands fa-apple fa-2x"></i></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
